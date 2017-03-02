@@ -13,15 +13,15 @@ Science and Technology | Abhay-s official blog
   src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
        <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
         <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
-<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+  <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
  <meta content="width=device-width,minimum-scale=1,initial-scale=1,initial-scale=1,user-scalable=0"name=viewport>
     <script type="application/ld+json">
     {
       "@context": "http://schema.org",
       "@type": "NewsArticle",
-      "headline": "Article headline",
+      "headline": "Abhay-s | official Abhay Saxena Blog",
       "image": [
-        "thumbnail1.jpg"
+        "icon.png"
       ],
       "datePublished": "2015-02-05T08:00:00+08:00"
     }
@@ -258,9 +258,7 @@ margin-bottom:20px;
 }
     
 } 
- amp-iframe{
-overflow: visible;
-}
+
 #AllCommentsButton{
 padding:10px;  
 background: #111;
@@ -275,9 +273,27 @@ text-align: center;
 #desktopNav{
 display: none;
 }
+ amp-carousel div{
+            background: #1e90ff;
+            margin-bottom: 0px;
+        }
+        amp-carousel div span{
+            padding:20px;
+            display: inline-block;
+            padding-top: 25px;
+             color:white;
+            font-family: monospace;
+            font-size: 22px;
+        }
+@media screen and (max-width:410px)
+{#amp-carousel{
+        display: none;
+    }}       
 @media screen and (min-width:810px)
 {
-    #desktopNav{display:block;font-size:20px;width:100%;
+     #amp-carousel{
+        display: none;
+    }  #desktopNav{display:block;font-size:20px;width:100%;
     padding:5px;
     text-align: center;
     background-color:#2ddead;
@@ -296,18 +312,7 @@ display: none;
 color:#f0ffff;
     }
 }
-        amp-carousel div{
-            background: #1e90ff;
-            margin-bottom: 0px;
-        }
-        amp-carousel div span{
-            padding:20px;
-            display: inline-block;
-            padding-top: 25px;
-             color:white;
-            font-family: monospace;
-            font-size: 22px;
-        }    
+       
     </style>
 
   </head>
@@ -361,12 +366,14 @@ color:#f0ffff;
     <amp-social-share type="twitter"></amp-social-share>
     <amp-social-share type="whatsapp"></amp-social-share>
     </div>
+      <div id="amp-carousel">
       <amp-carousel width="500" height="400" layout="responsive" type="slides">
     <div><amp-img src="blogIcon/arduino.jpg" width="700" height="420" layout="responsive" alt="a sample image"></amp-img><span>Arduino | An introduction</span></div>
        
     <div><amp-img src="blogIcon/seo.jpg" width="700" height="420" layout="responsive" alt="another sample image"></amp-img><span>SEO | Importance of search engine Optimization</span></div>
   
   </amp-carousel>
+        </div>
       <br><br><br><br>
     <article>
         
@@ -388,14 +395,18 @@ color:#f0ffff;
         </center>
   
 </article>
-<a href=#disqus_thread></a>
-<amp-iframe width=600 height=200
-    layout="responsive"
-    sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
-    resizable
-  src="https://firekiwi.github.io/amp/#000001">
-  <div overflow tabindex=0 role=button aria-label="Read more" id="AllCommentsButton">All Comments</div>
-</amp-iframe>
+
+ <div class="comments">
+      <amp-iframe
+        height="300"
+        sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        resizable
+        frameborder="0"
+        src="https://firekiwi.github.io/amp/?url=https://abhay-s.github.io">
+        <div overflow tabindex="0" role="button" aria-label="Read more">Read more!</div>
+      </amp-iframe>
+    </div>
+
 <footer>
     Abhay-s | Official Abhay Saxena blog
     <br><br>

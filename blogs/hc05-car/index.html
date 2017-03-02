@@ -10,10 +10,12 @@ HC-05 introduction and cars | Abhay-s official blog
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway" rel="stylesheet">
    
    <link rel="canonical" href="https://abhay-s.github.io">
+      
     <script async custom-element="amp-analytics"
   src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
        <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+      <script async custom-element="amp-image-lightbox" src="https://cdn.ampproject.org/v0/amp-image-lightbox-0.1.js"></script>  
+      <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
  <meta content="width=device-width,minimum-scale=1,initial-scale=1,initial-scale=1,user-scalable=0"name=viewport>
     <script type="application/ld+json">
@@ -284,9 +286,6 @@ margin-bottom:20px;
 }
     
 } 
- amp-iframe{
-overflow: visible;
-}
 #AllCommentsButton{
 padding:10px;  
 background: #111;
@@ -375,27 +374,76 @@ color:#f0ffff;
     <amp-social-share type="twitter"></amp-social-share>
     <amp-social-share type="whatsapp"></amp-social-share>
     </div>
-     
+  
     <article>
        
-        <h1>Introduction to HC-05 and making car</h1>  
+        <h1>Introduction to HC-05 and making car</h1> 
+         <amp-img
+    src="hc-05.jpg"
+    srcset="hc-05.jpg 640w,
+           hc-05m.jpg 420w"
+    width="700"
+    height="420"
+    layout="responsive"
+    alt="an image">
+</amp-img>
+
         <h2>
-       What is HC-05
+       What is HC-05?
         </h2>
        <b>HC-05</b> module is an easy to use Bluetooth SPP (Serial Port Protocol) Slave module, for wireless serial connection setup. Serial port Bluetooth module is fully qualified Bluetooth V2.0+EDR (Enhanced Data Rate) 3Mbps Modulation with 2.4GHz radio transceiver and baseband .<br> It can be simply used in blace of normal serial used in arduino by default , just via bluetooth.
         <br><br>
-        <h2>What is</h2>
-        L293D MOTOR DRIVER IC
-   
+        <h2>Making a HC-05 bluetooth mobile controlled car</h2>
+        <br><br>
+        <b>materials-</b>
+        any Motor driver(i used  L293D MOTOR DRIVER IC) , Chases ,HC-05 bluetooth module , jumper wires , adapter/battery , 2 wheels and 2 motors for it , Arduino uno/mega/mini/micro , android mobile with bluetooth support , Bluetooth Terminal App in it. <a href="https://play.google.com/store/apps/details?id=ptah.apps.bluetoothterminal&hl=en">Download Now On android</a>
+        <br><br>
+        Lets Begin Making It-
+        <br><br>First Make the following cicuit from hc-05 to arduino <br><br>connect-<br>
+        vcc -> 3v<br>
+        gnd(hc-05) -> gnd(arduino)
+        <br>
+        tx -> rx<br>
+        rx -> tx<br>
+        <br>
+       <center> <a target="_blank" href="circuit.JPG"><amp-img height=60 layout=fixed src=circuit.JPG width=100 alt="circuit">
+</amp-img></a><br>tap the image to enlarge</center>
+<br><br><br>
+now connect motor pins via motor driver to arduino.<br><br>
+1.Connect motors to motor drivers<br>
+2.Connect left motor positive to pin 3 and negative to pin 4
+<br>
+3.Connect right motor positive to pin 4 and negative to pin 5
+<br><br>If motors rotate opposite , you may flip positive and negative or left motor to right motor.<br>Join the motors tho Chases. <br><br>
+<b>Now lets upload the code!</b>
+        
+<br><br>
+    Code is here-    
+        <br><br>
+  <amp-iframe width="500" height="281" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" allowfullscreen frameborder="0" src="https://abhay-s.github.io/blogs/hc05-car/code/index.html">
+  </amp-iframe>  <br><br>
+        Open Your arduinoIDE , paste this code in it , connect arduino to your PC/mac and upload this code.<br><br>now plug in arduino to adapter , if proper moter driver , plug in to motor driver and controll with your mobile app
+        Open Your arduinoIDE , paste this code in it , connect arduino to your PC/mac and upload this code.<br><br>now plug in arduino to adapter , if proper moter driver , plug in to motor driver and controll with your mobile app downloaded earlier. <br><br>
+        control commands are-
+        <br><br>
+        f -> front<br>
+        b -> back<br>
+        r -> right<br>
+        l -> left<br>
+        s -> stop<br>
+        <br><br>
+        hope you enjoyed . Any query or feedback , kindly leave a comment below.<br><br>
 </article>
-<a href=#disqus_thread></a>
-<amp-iframe width=600 height=200
-    layout="responsive"
-    sandbox="allow-scripts allow-same-origin allow-modals allow-popups allow-forms"
-    resizable
-  src="https://firekiwi.github.io/amp/#amp0003">
-  <div overflow tabindex=0 role=button aria-label="Read more" id="AllCommentsButton">All Comments</div>
-</amp-iframe>
+<div class="comments">
+      <amp-iframe
+        height="300"
+        sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+        resizable
+        frameborder="0"
+        src="https://firekiwi.github.io/amp/?url=https://abhay-s.github.io/blogs/hc05-car">
+        <div overflow tabindex="0" role="button" aria-label="Read more">Read more!</div>
+      </amp-iframe>
+    </div>
 <footer>
     Abhay-s | Official Abhay Saxena blog
     <br><br>
