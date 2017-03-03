@@ -301,6 +301,18 @@ text-align: center;
 #desktopNav{
 display: none;
 }
+        code{
+            padding:20px;
+            margin:0px -10px;
+            display:block;
+            background-color: #3e3d3d;
+            color:white;
+            font-family: monospace;
+            line-height: 30px;
+            height:350px;
+            overflow-x: scroll;
+            overflow-y: scroll;
+        }
 @media screen and (min-width:810px)
 {
     #desktopNav{display:block;font-size:20px;width:100%;
@@ -417,12 +429,70 @@ now connect motor pins via motor driver to arduino.<br><br>
 3.Connect right motor positive to pin 4 and negative to pin 5
 <br><br>If motors rotate opposite , you may flip positive and negative or left motor to right motor.<br>Join the motors tho Chases. <br><br>
 <b>Now lets upload the code!</b>
-        
-<br><br>
+       <br><br> 
+<br><b>Note:</b>Remember while uploading , remove the tx and rx wire for some time. Then connect them after code is uploaded.<br><br>
     Code is here-    
         <br><br>
-  <amp-iframe width="500" height="281" layout="responsive" sandbox="allow-scripts allow-same-origin allow-popups" allowfullscreen frameborder="0" src="https://abhay-s.github.io/blogs/hc05-car/code/index.html">
-  </amp-iframe>  <br><br>
+  <PRE><CODE CLASS=c++>
+int lp = 3;//left motor positive
+int ln = 4;//left motor negative
+int rp = 5;//right motor positive
+int rn = 6;//right motor negative
+void setup()
+{
+  Serial.begin(9600);
+  
+  pinMode(lp,OUTPUT);
+  pinMode(rp,OUTPUT);
+  pinMode(ln,OUTPUT);
+  pinMode(rn,OUTPUT);
+}
+void loop()
+{
+ if(Serial.available())
+ {
+   String value = Serial.readStringUntil('\n');
+   Serial.println(value);
+   if(value == "f")
+   {
+     digitalWrite(lp,HIGH);
+     digitalWrite(rp,HIGH);
+     digitalWrite(ln,LOW);
+     digitalWrite(rn,LOW);
+   }
+   else if(value == "b")
+   {
+     digitalWrite(lp,LOW);
+     digitalWrite(rp,LOW);
+     digitalWrite(ln,HIGH);
+     digitalWrite(rn,HIGH);
+   }
+   else if(value == "r")
+   {
+     digitalWrite(lp,HIGH);
+     digitalWrite(rp,LOW);
+     digitalWrite(ln,LOW);
+     digitalWrite(rn,LOW);
+   }
+   else if(value == "l")
+   {
+     digitalWrite(lp,LOW);
+     digitalWrite(rp,HIGH);
+     digitalWrite(ln,LOW);
+     digitalWrite(rn,LOW);
+   }
+   else if(value == "s")
+   {
+     digitalWrite(lp,LOW);
+     digitalWrite(rp,LOW);
+     digitalWrite(ln,LOW);
+     digitalWrite(rn,LOW);
+   }
+   
+ }
+}
+
+</CODE></PRE>  <br>Download The source <a href="hc-05_car-abhay-s/hc-05_car-abhay-s.ino" download>here</a><br><br><br>
         Open Your arduinoIDE , paste this code in it , connect arduino to your PC/mac and upload this code.<br><br>now plug in arduino to adapter , if proper moter driver , plug in to motor driver and controll with your mobile app
         Open Your arduinoIDE , paste this code in it , connect arduino to your PC/mac and upload this code.<br><br>now plug in arduino to adapter , if proper moter driver , plug in to motor driver and controll with your mobile app downloaded earlier. <br><br>
         control commands are-
@@ -432,7 +502,7 @@ now connect motor pins via motor driver to arduino.<br><br>
         r -> right<br>
         l -> left<br>
         s -> stop<br>
-        <br><br>
+        <br>type in these commands in the android app and enjoy driving the car<br><br>
         hope you enjoyed . Any query or feedback , kindly leave a comment below.<br><br>
 </article>
 <div class="comments">
