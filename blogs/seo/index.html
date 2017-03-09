@@ -3,20 +3,18 @@
 <html ⚡>
   <head>
     <meta charset="utf-8">
+   <link href=/icon.png rel="shortcut icon">
      <meta name="theme-color" content="#2ddea8">
-    <link href=/icon.png rel="shortcut icon">
-<title>
-HC-05 introduction and cars | Abhay-s official blog
+    <title>
+Science and Technology | Abhay-s official blog
     </title> 
     <link href="https://fonts.googleapis.com/css?family=Pacifico|Raleway" rel="stylesheet">
    
    <link rel="canonical" href="https://abhay-s.github.io">
-      
     <script async custom-element="amp-analytics"
   src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
        <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
-      
-      <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+        <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
  <meta content="width=device-width,minimum-scale=1,initial-scale=1,initial-scale=1,user-scalable=0"name=viewport>
     <script type="application/ld+json">
@@ -27,15 +25,15 @@ HC-05 introduction and cars | Abhay-s official blog
     "@type": "WebPage",
     "@id": "https://abhay-s.github.io"
   },
-  "headline": "HC-05 car and introduction",
+  "headline": "SEO | what is it?",
   "image": {
     "@type": "ImageObject",
-    "url": "https://abhay-s.github.io/blogIcon/hc-05.jpg",
+    "url": "https://abhay-s.github.io/defaultseo.jpg",
     "height": 420,
     "width": 700
   },
-  "datePublished": "2017-03-06T23:53:49.571305+00:00",
-  "dateModified": "2017-03-06T23:53:49.571305+00:00",
+  "datePublished": "2017-02-24",
+  "dateModified": "2017-02-24",
   "author": {
     "@type": "Person",
     "name": "Abhay Saxena"
@@ -46,8 +44,8 @@ HC-05 introduction and cars | Abhay-s official blog
     "logo": {
       "@type": "ImageObject",
       "url": "https://abhay-s.github.io/icon.png",
-      "width": 400,
-      "height": 400
+      "width": 60,
+      "height": 60
     }
   },
   "description": "learn about Search engine optimization"
@@ -287,6 +285,7 @@ margin-bottom:20px;
 }
     
 } 
+
 #AllCommentsButton{
 padding:10px;  
 background: #111;
@@ -301,18 +300,6 @@ text-align: center;
 #desktopNav{
 display: none;
 }
-        code{
-            padding:20px;
-            margin:0px -10px;
-            display:block;
-            background-color: #3e3d3d;
-            color:white;
-            font-family: monospace;
-            line-height: 30px;
-            height:350px;
-            overflow-x: scroll;
-            overflow-y: scroll;
-        }
 @media screen and (min-width:810px)
 {
     #desktopNav{display:block;font-size:20px;width:100%;
@@ -342,16 +329,25 @@ color:#f0ffff;
    <amp-analytics type="googleanalytics">
   <script type="application/json">
   {
-      "vars": {
-        "account": "UA-86554007-2"
+    "vars": {
+      "account": "UA-86554007-2"
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
       },
-      "triggers": {
-        "trackPageview": {
-          "on": "visible",
-          "request": "pageview"
+      "trackEvent": {
+        "selector": "#event-test",
+        "on": "click",
+        "request": "event",
+        "vars": {
+          "eventCategory": "ui-components",
+          "eventAction": "click"
         }
       }
     }
+  }
   </script>
   </amp-analytics>
    <a href=/ id=h1><amp-img height=100 layout=fixed src=/icon.png width=100 alt="abhay-s blog icon"id=icon>
@@ -378,123 +374,16 @@ color:#f0ffff;
     <amp-social-share type="twitter"></amp-social-share>
     <amp-social-share type="whatsapp"></amp-social-share>
     </div>
-  
+     
     <article>
        
-        <h1>Introduction to HC-05 and making car</h1> 
-         <amp-img
-    src="hc-05.JPG"
-    srcset="hc-05.JPG 640w,
-           hc-05m.JPG 420w"
-    width="700"
-    height="420"
-    layout="responsive"
-    alt="an image">
-</amp-img>
-
+        <h1>SEO | What is search engine optimization</h1>  
         <h2>
-       What is HC-05?
+        What is Search engine Optimization
         </h2>
-       <b>HC-05</b> module is an easy to use Bluetooth SPP (Serial Port Protocol) Slave module, for wireless serial connection setup. Serial port Bluetooth module is fully qualified Bluetooth V2.0+EDR (Enhanced Data Rate) 3Mbps Modulation with 2.4GHz radio transceiver and baseband .<br> It can be simply used in blace of normal serial used in arduino by default , just via bluetooth.
-        <br><br>
-        <h2>Making a HC-05 bluetooth mobile controlled car</h2>
-        <br><br>
-        <b>materials-</b>
-        any Motor driver(i used  L293D MOTOR DRIVER IC) , Chases ,HC-05 bluetooth module , jumper wires , adapter/battery , 2 wheels and 2 motors for it , Arduino uno/mega/mini/micro , android mobile with bluetooth support , Bluetooth Terminal App in it. <a href="https://play.google.com/store/apps/details?id=ptah.apps.bluetoothterminal&hl=en">Download Now On android</a>
-        <br><br>
-        Lets Begin Making It-
-        <br><br>First Make the following cicuit from hc-05 to arduino <br><br>connect-<br>
-        vcc -> 3v<br>
-        gnd(hc-05) -> gnd(arduino)
-        <br>
-        tx -> rx<br>
-        rx -> tx<br>
-        <br>
-       <center> <a target="_blank" href="circuit.JPG"><amp-img height=60 layout=fixed src=circuit.JPG width=100 alt="circuit">
-</amp-img></a><br>tap the image to enlarge</center>
-<br><br><br>
-now connect motor pins via motor driver to arduino.<br><br>
-1.Connect motors to motor drivers<br>
-2.Connect left motor positive to pin 3 and negative to pin 4
-<br>
-3.Connect right motor positive to pin 4 and negative to pin 5
-<br><br>If motors rotate opposite , you may flip positive and negative or left motor to right motor.<br>Join the motors tho Chases. <br><br>
-<b>Now lets upload the code!</b>
-       <br><br> 
-<br><b>Note:</b>Remember while uploading , remove the tx and rx wire for some time. Then connect them after code is uploaded.<br><br>
-    Code is here-    
-        <br><br>
-  <PRE><CODE CLASS=c++>
-int lp = 3;//left motor positive
-int ln = 4;//left motor negative
-int rp = 5;//right motor positive
-int rn = 6;//right motor negative
-void setup()
-{
-  Serial.begin(9600);
-  
-  pinMode(lp,OUTPUT);
-  pinMode(rp,OUTPUT);
-  pinMode(ln,OUTPUT);
-  pinMode(rn,OUTPUT);
-}
-void loop()
-{
- if(Serial.available())
- {
-   String value = Serial.readStringUntil('\n');
-   Serial.println(value);
-   if(value == "f")
-   {
-     digitalWrite(lp,HIGH);
-     digitalWrite(rp,HIGH);
-     digitalWrite(ln,LOW);
-     digitalWrite(rn,LOW);
-   }
-   else if(value == "b")
-   {
-     digitalWrite(lp,LOW);
-     digitalWrite(rp,LOW);
-     digitalWrite(ln,HIGH);
-     digitalWrite(rn,HIGH);
-   }
-   else if(value == "r")
-   {
-     digitalWrite(lp,HIGH);
-     digitalWrite(rp,LOW);
-     digitalWrite(ln,LOW);
-     digitalWrite(rn,LOW);
-   }
-   else if(value == "l")
-   {
-     digitalWrite(lp,LOW);
-     digitalWrite(rp,HIGH);
-     digitalWrite(ln,LOW);
-     digitalWrite(rn,LOW);
-   }
-   else if(value == "s")
-   {
-     digitalWrite(lp,LOW);
-     digitalWrite(rp,LOW);
-     digitalWrite(ln,LOW);
-     digitalWrite(rn,LOW);
-   }
+       
+        SEO or <b>Search Engine Optimization</b> Means to optimize a page for a search engine and raise its rank of a search result
    
- }
-}
-
-</CODE></PRE>  <br>Download The source <a href="hc-05_car-abhay-s/hc-05_car-abhay-s.ino" download>here</a><br><br><br>
-        Open Your arduinoIDE , paste this code in it , connect arduino to your PC/mac and upload this code.<br><br>now plug in arduino to adapter , if proper moter driver , plug in to motor driver and controll with your mobile app
-        Open Your arduinoIDE , paste this code in it , connect arduino to your PC/mac and upload this code.<br><br>now plug in arduino to adapter , if proper moter driver , plug in to motor driver and controll with your mobile app downloaded earlier. <br><br>
-        control commands are-
-        <br><br>
-        f -> front<br>
-        b -> back<br>
-        r -> right<br>
-        l -> left<br>
-        s -> stop<br>
-        <br>type in these commands in the android app and enjoy driving the car<br><br>
-        hope you enjoyed . Any query or feedback , kindly leave a comment below.<br><br>
 </article>
 <div class="comments">
       <amp-iframe
@@ -502,7 +391,7 @@ void loop()
         sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
         resizable
         frameborder="0"
-        src="https://firekiwi.github.io/amp/?url=https://abhay-s.github.io/blogs/hc05-car">
+        src="https://firekiwi.github.io/amp/?url=https://abhay-s.github.io/blogs/defaultBlog">
         <div overflow tabindex="0" role="button" aria-label="Read more">Read more!</div>
       </amp-iframe>
     </div>
