@@ -294,20 +294,22 @@ font-size:20px;
 font-family: raleway;
 text-align: center;
 }
-#desktopNav{
-display: none;
-}
  amp-carousel div{
-            background: #1e90ff;
+            background: none;
             margin-bottom: 0px;
         }
         amp-carousel div span{
-            padding:20px;
             display: inline-block;
-            padding-top: 25px;
+            
              color:white;
             font-family: monospace;
             font-size: 22px;
+            position:relative;
+            bottom:75px;
+            background: linear-gradient(rgba(0, 0, 0, 0), #505050);
+            width:100%;
+            padding:20px;
+            padding-top:30px;
         }
 @media screen and (max-width:410px)
 {#amp-carousel{
@@ -317,24 +319,7 @@ display: none;
 {
      #amp-carousel{
         display: none;
-    }  #desktopNav{display:block;font-size:20px;width:100%;
-    padding:5px;
-    text-align: center;
-    background-color:#2ddead;
-    top:0px;left:0px;position:fixed;
-    z-index: 99999999999999999999;
-    }
-    #desktopNav a{
-        text-decoration:none;color:black;
-        font-family:pacifico;
-        padding:0px 20px;
-}
-    #desktopNav a:hover{
-        color:#f0ffff;
-    }
-    #desktopNav a.active{
-color:#f0ffff;
-    }
+    }  
 }
        
     </style>
@@ -342,7 +327,7 @@ color:#f0ffff;
   </head>
   <body>
   
-   <amp-analytics type="googleanalytics">
+  <amp-analytics type="googleanalytics" id="analytics1">
   <script type="application/json">
  {
       "vars": {
@@ -359,9 +344,7 @@ color:#f0ffff;
   </amp-analytics>
    <a href=/ id=h1><amp-img height=100 layout=fixed src=icon.png width=100 alt="abhay-s blog icon"id="icon">
 </amp-img>abhay-s</a>
-<div id="desktopNav">
-    <a href=/about>portfolio</a><a href=# class=active>Blog</a><amp-img height=40 layout=fixed src=icon.png width=40 alt="abhay-s blog icon"id=icon></amp-img><a href=/company>Company</a><a href=/labs>labs</a>   
-      </div>
+
  <amp-sidebar id="sidebar" layout="nodisplay" side="right">
 <a href=/about>portfolio</a><a href=# class=active>Blog</a><a href=/company>Company</a><a href=/labs>labs</a>
   </amp-sidebar>
@@ -382,7 +365,7 @@ color:#f0ffff;
     <amp-social-share type="whatsapp"></amp-social-share>
     </div>
       <div id="amp-carousel">
-      <amp-carousel width="500" height="400" layout="responsive" type="slides">
+      <amp-carousel width="500" height="320" layout="responsive" type="slides">
     <div><a href="https://abhay-s.github.io/blogs/hc05-car/"><amp-img src="blogIcon/hc-05.JPG" width="700" height="420" layout="responsive" alt="a sample image"></amp-img><span>Arduino | An introduction</span></a></div>
        
     <div><amp-img src="blogIcon/seo.jpg" width="700" height="420" layout="responsive" alt="SEarch engine optimization"></amp-img><span>SEO | Importance of search engine Optimization</span></div>

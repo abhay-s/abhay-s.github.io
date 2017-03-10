@@ -45,12 +45,12 @@ HC-05 introduction and cars | Abhay-s official blog
     "name": "Abhay-s",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://abhay-s.github.io/icon.png",
+      "url": "https://abhay-s.github.io/600x60lgo.png",
       "width": 400,
       "height": 400
     }
   },
-  "description": "learn about Search engine optimization"
+  "description": "Learn How to Make an android controlled car"
 }
 </script>
    
@@ -210,14 +210,12 @@ border-radius:10px
 }
 
 h2 {
-font-family:Courier,monospace;
-text-align: left;
+font-family:Courier,monospace
 }
 
 article {
 font-family:Raleway,sans-serif,arial;
-text-align:left;
-padding:0px 10px;
+text-align:center
 }
 
 #h1 {
@@ -287,6 +285,7 @@ margin-bottom:20px;
 }
     
 } 
+
 #AllCommentsButton{
 padding:10px;  
 background: #111;
@@ -298,10 +297,34 @@ font-size:20px;
 font-family: raleway;
 text-align: center;
 }
-#desktopNav{
-display: none;
+ amp-carousel div{
+            background: none;
+            margin-bottom: 0px;
+        }
+        amp-carousel div span{
+            display: inline-block;
+            
+             color:white;
+            font-family: monospace;
+            font-size: 22px;
+            position:relative;
+            bottom:75px;
+            background: linear-gradient(rgba(0, 0, 0, 0), #505050);
+            width:100%;
+            padding:20px;
+            padding-top:30px;
+        }
+@media screen and (max-width:410px)
+{#amp-carousel{
+        display: none;
+    }}       
+@media screen and (min-width:810px)
+{
+     #amp-carousel{
+        display: none;
+    }  
 }
-        code{
+           code{
             padding:20px;
             margin:0px -10px;
             display:block;
@@ -313,28 +336,33 @@ display: none;
             overflow-x: scroll;
             overflow-y: scroll;
         }
-@media screen and (min-width:810px)
-{
-    #desktopNav{display:block;font-size:20px;width:100%;
-    padding:5px;
-    text-align: center;
-    background-color:#2ddead;
-    top:0px;left:0px;position:fixed;
-    z-index: 99999999999999999999;
-    }
-    #desktopNav a{
-        text-decoration:none;color:black;
-        font-family:pacifico;
-        padding:0px 20px;
+        
+    body::-webkit-scrollbar {
+    width: 12px;
 }
-    #desktopNav a:hover{
-        color:#f0ffff;
-    }
-    #desktopNav a.active{
-color:#f0ffff;
-    }
+ 
+body::-webkit-scrollbar-track {
+    background: #4e4e4e;
 }
-    </style>
+ 
+        body::-webkit-scrollbar-thumb {
+  background-color: #2cb5e8;
+            
+  outline: 0px;
+} 
+    code::-webkit-scrollbar {
+    width: 42px;
+}
+ 
+code::-webkit-scrollbar-track {
+    background: #4e4e4e;
+}
+ 
+        code::-webkit-scrollbar-thumb {
+  background-color: #2cb5e8;        
+  outline: 0px;
+} 
+      </style>
 
   </head>
   <body>
@@ -356,9 +384,7 @@ color:#f0ffff;
   </amp-analytics>
    <a href=/ id=h1><amp-img height=100 layout=fixed src=/icon.png width=100 alt="abhay-s blog icon"id=icon>
 </amp-img>abhay-s</a>
-<div id="desktopNav">
-    <a href=/about>portfolio</a><a href=/ class=active>Blog</a><amp-img height=40 layout=fixed src=/icon.png width=40 alt="abhay-s blog icon"id=icon></amp-img><a href=/company>Company</a><a href=/labs>labs</a>   
-      </div>
+
  <amp-sidebar id="sidebar" layout="nodisplay" side="right">
 <a href=/about>portfolio</a><a href=/ class=active>Blog</a><a href=/company>Company</a><a href=/labs>labs</a>
   </amp-sidebar>
