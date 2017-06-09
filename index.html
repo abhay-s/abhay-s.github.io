@@ -1,0 +1,308 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+      <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <title>Abhay-s</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+      </script>
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans|Vibur" rel="stylesheet">
+      <style amp-custom>
+  body , html{
+    background-color: #111;
+    margin:0px;
+      width:100%;
+      font-family: 'Open Sans', sans-serif;
+  }
+          hr { display: block; margin: 0 auto; }
+          nav{
+              padding:20px;
+              width:100%;
+              position:fixed;
+              top:0px;
+              font-size:19px;
+              color:black;
+              font-family: 'Vibur', cursive;
+        background:rgba(255,255,255,0.9);
+              z-index: 999999;
+              box-shadow:0px 1px 3px rgba(0,0,0,0.3);
+          } 
+          #menub .MenuLine{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+}
+          #menub{
+        position:absolute;
+              right:55px;
+              top:8px;
+              padding:10px; 
+              cursor: pointer;
+              background: none;
+              border:none;
+          }
+          amp-sidebar{
+              color:white;
+            background:#4e4e4e;
+              width:270px;
+              display: block;
+          }
+          amp-sidebar h2{
+              position:absolute;
+              width:100%;
+              border-bottom-style: solid;
+              border-bottom-width: 1px;
+              border-bottom-color: white;
+             font-size:19px;
+              color:white;
+              font-weight:100;
+              font-family: 'Vibur', cursive;
+              padding:20px;
+              margin:0px;
+          }
+          #ticon{
+              -webkit-animation: subtag 3s forwards ease-in-out; 
+    animation: subtag 3s forwards ease-in-out;
+          }
+          
+          #box1{
+              padding:70px 0px;
+              background-color:#ffffff;
+               font-size: 25px;
+              font-weight: 50;
+    letter-spacing: 5px;
+              text-align: center;
+          }
+          #box1 a{
+              color:#111;
+              padding:15px;
+              text-decoration: none;
+              margin-left:50px;
+              margin:40px 0px;
+              font-size:25px;
+              border-style: solid;
+              border-width: 1px;
+              border-color: #11ac77;
+              display:inline-block;
+          }
+          #box1 a:hover{
+              background-color:#11ac77;
+              color:white;
+          }
+          h1{
+              color:white;
+              font-family: 'Vibur', cursive;
+              font-weight: 200;
+              width:100%;
+              text-align: center;
+              cursor: default;
+              
+          }
+          #hr1{
+              width:50px;
+              text-align: center;
+              border-color:#15aa77;
+              border-style: solid;
+              border-width: 0.5px;
+              
+          }
+          #hr2{
+              width:50px;
+              text-align:center;
+              border-color:#d6a6a6;
+              border-style: solid;
+              border-width: 0.5px;
+              
+          }
+          #hr3{
+              width:50px;
+              text-align:center;
+              border-color:#cdc1ff;
+              border-style: solid;
+              border-width: 0.5px;
+              
+          }
+            #hr4{
+              width:100%;
+              text-align:center;
+              border-color:#ffffff;
+              border-style: solid;
+              border-width: 0.5px;
+              
+          }
+          #footer{
+            background-color:#2ad8bd;
+              padding:60px 30px;
+              color:white;
+                font-size: 15px;
+              font-weight: 50;
+    letter-spacing: 6px;   
+          }
+          #introb{
+              padding:180px 0px;
+              text-align: center;
+          }
+          #company{
+              padding:80px 0px;
+              background: #4b3095;
+              text-align:center;
+                 font-weight: 50;
+    letter-spacing: 5px;
+              font-size: 25px;
+              color:White;
+          }
+          #company amp-img{
+              vertical-align: middle;
+          }
+          #introb span{
+              color:#f2f2f2;
+              font-size: 25px;
+    letter-spacing: 3px;
+              display: block;
+              -webkit-animation: subtag 2s forwards ease-in-out; 
+    animation: subtag 2s forwards ease-in-out;
+          }
+          #box2{
+              background-color:#d82a2a;
+              padding:60px 0px;
+              color:white;
+              text-align: center;
+                font-size: 25px;
+              font-weight: 50;
+    letter-spacing: 5px;
+          }
+          #arbas{display: inline-block;
+              padding:10px;background: white;
+              color:red;
+              margin:10px;
+              border-radius: 5px;
+              text-decoration: none;
+              transition:opacity 1s;
+          }
+          #arbas amp-img{
+              vertical-align:middle;
+          }
+          #arbas span{
+              font-size:14px;
+              color:black;
+          }
+          #arbas:hover{opacity:0.7;}
+          #cheter{text-decoration: none;
+              color:white;
+              background-image: url(cheter.JPG);
+             margin:10px;
+              display:inline-block;
+              border-radius: 5px;
+              padding:100px 112px;
+              background-size: auto 100%;
+              transition:opacity 1s;
+          }
+          #cheter:hover{
+              opacity:0.7;
+          }
+          #downar{
+              padding:7px;
+            -webkit-animation: mymove 3s infinite ease-in-out; 
+    animation: mymove 3s infinite ease-in-out;
+    cursor:default;
+              display:inline-block;
+          }
+          center{
+              display:block;
+              text-align: center;
+          }
+          amp-sidebar a{
+              display:block;
+              color:white;
+              padding:30px 15px;
+              text-decoration: none;
+              font-family: 'Open Sans', sans-serif;
+              letter-spacing: 5px;
+          }
+          amp-sidebar a:hover{
+              color:#94cdff;
+          }
+          @-webkit-keyframes mymove {
+     from{transform: translateY(50px);opacity:1;}
+     to{transform: translateY(60px);opacity:0.4;}
+} 
+@keyframes mymove {
+    0%   {transform: translateY(50px);opacity:0.4;}
+    25%  {transform: translateY(60px);opacity:1;}
+    100% {transform: translateY(50px);opacity:0.4;}
+}
+@-webkit-keyframes subtag {
+     from{opacity:0.6;}
+     to{opacity:1;}
+} 
+@keyframes subtag {
+    0%   {opacity:0.6;}
+    100% {opacity:1;}
+}
+</style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  </head>
+  <body>
+    <nav>Abhay Saxena
+       <button id="menub" on='tap:sidebar1.toggle'>
+  <div class="MenuLine"></div>
+  <div class="MenuLine"></div>
+  <div class="MenuLine"></div>
+</button> 
+      </nav>
+     <amp-sidebar id='sidebar1' layout='nodisplay' side='left'>
+  <h2>Abhay-s</h2>
+         <br><br><br><br>
+         <a href="/blogs">BLOGS</a>
+         <a href="#company">COMPANIES</a>
+         <a href="#box2">LABS</a>
+</amp-sidebar>   
+      <div id="introb"><h1><amp-img src="abhay.png" alt="abhay-s icon" height="150" width="150" id="ticon"></amp-img><br>Abhay-s</h1><br>
+          <span>CREATIVITY SHOULD NEVER STOP</span><a id="downar"><svg fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+    <path d="M0-.75h24v24H0z" fill="none"/>
+</svg></a></div>
+      <span id="down"></span>
+      <div id="box1">
+          My Stuffs
+         <hr id="hr1" align="center"> 
+          <br>
+   <a href="/blogs">BLOGS</a>
+   <a href="#company">COMPANIES</a>
+      </div>
+      <div id="box2">
+       &nbsp;L A B S
+         <hr id="hr2" align="center">
+          <br><br>
+        <a href="https://arbasit.wordpress.com" id="arbas">&nbsp;A R B A S <amp-img src="robot_icon-svg-e1467872965749.png" alt="abhay-s icon" height="150" width="150"></amp-img><br><span>A Robot By Abhay Saxena</span></a><br><br><a id="cheter" href="/cheter">CHETER</a>
+      </div>
+      <div id="company">
+       COMPANIES
+         <hr id="hr3" align="center"> 
+          <br><br>
+          ACTCORP<amp-img src="act.jpg" alt="actcorp" height="50" width="50"></amp-img>
+          <br><br>
+         KWIKE<amp-img src="c-icon.png" alt="kwike" height="50" width="50"></amp-img><br><br>
+          ABHAY-S<amp-img src="abhay.png" alt="kwike" height="50" width="50"></amp-img>
+      </div>
+      <div id="footer">
+      Abhay-s | Abhay Saxena<br><br>
+          <hr id="hr4"><br>
+      All rights reserved | copyright 2017 <br><br><br><br>This site is completely made and owned by Abhay Saxena   
+      
+      </div>
+  </body>
+</html>
