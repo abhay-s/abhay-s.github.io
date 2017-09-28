@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.myapp.mobile" version="2.25" xmlns="http://www.w3.org/ns/widgets">
+  <name>ME</name>
+  <description>The Exercise App</description>
+  <author email="abhaysaxena.in@gmail.com" href="https://abhay-s.github.io">Abhay Saxena</author>
+  <preference name="phonegap-version" value="cli-6.5.0" />
+  <preference name="permissions" value="none" />
+  <preference name="orientation" value="portrait" />
+  <preference name="target-device" value="universal" />
+  <preference name="fullscreen" value="true" />
+  <icon src="icon.png" />
+</widget>

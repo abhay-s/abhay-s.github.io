@@ -1,0 +1,1 @@
+css circle - background: linear-gradient(left, black 50%, white 0%);
