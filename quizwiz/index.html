@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Vibur" rel="stylesheet">
+    <style>
+        body{text-align: center;
+            font-family:'Open sans';
+            margin-top: 130px;
+        }
+        img{
+          height:230px;
+            opacity: 0.9;
+        }
+        p{
+            letter-spacing:5px;
+            font-size:23px;
+        }
+        h1{
+            font-family:'vibur';
+            font-weight: 300;
+        }
+.vl {
+opacity:0.8;
+display:inline-block;
+margin:0px 10px;
+    border-left: 2px solid #111;
+    height: 230px;
+}
+
+      h1 p3{
+display:block;
+margin-top:10px;
+font-size:17px;
+font-family:poiret one;
+}
+</style>
+</head>
+
+<body onload="JSalert()">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <img src="drawing.png"><span class="vl"></span>    <img id="csn" src="bitmap.png">
+    <h1 id="name">
+    Abhay Saxena
+<p3 id='classSec'>CLASS 10 E</p3>
+    </h1><br>
+    <p>MY SEWA PROMISE</p>
+<script>
+function JSalert(){
+  var person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+      document.getElementById("name").innerHTML = person + "<p3 id='classSec'>CLASS 10 E</p3>";
+      var Sec = prompt("Please enter your class section", "E");
+      if (person != null) {
+        var Section = Sec.toUpperCase();
+          document.getElementById('classSec').innerHTML = "CLASS 10 " + Section;
+      }
+
+  }
+}
+</script>
+</body>
+</html>
