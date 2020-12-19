@@ -1,9 +1,20 @@
 <html>
 <head>
 <script type="text/javascript">
-  navigator.getWakeLock("screen").then(function(wakeLock) {
-  var request = wakeLock.createRequest();
-});
+  const requestWakeLock = async () => {
+  try {
+
+    const wakeLock = await navigator.wakeLock.request('screen');
+
+  } catch (err) {
+    // the wake lock request fails - usually system related, such low as battery
+
+    console.log(`${err.name}, ${err.message}`);
+  }
+}
+
+requestWakeLock();
+
 function startTime()
 {
 var today=new Date();
@@ -30,20 +41,25 @@ body{
   margin:0;
   background-color:black;
 }
-#txt{
+#box{
   color:white;
 width: 100%;
 text-align: center;
 letter-spacing: 20px;
   padding-top: 45vh;
-  font-family: "poiret one";
+font-family:"poiret one";
   font-size: 50px;
   display:block;
-
+}
+#txt{
+ font-size: 50px;
+  background: -webkit-linear-gradient(#ece9e6, #348ac7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>
 </head>
 <body onload="startTime()">
-<div id="txt"></div>
+<div id="box"><div id="txt"></div></div>
 </body>
 </html>
