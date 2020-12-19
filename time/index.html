@@ -1,6 +1,9 @@
 <html>
 <head>
 <script type="text/javascript">
+  navigator.getWakeLock("screen").then(function(wakeLock) {
+  var request = wakeLock.createRequest();
+});
 function startTime()
 {
 var today=new Date();
